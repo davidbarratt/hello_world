@@ -78,7 +78,7 @@ class HelloWorld extends BlockBase implements ContainerFactoryPluginInterface {
     // ({@link https://www.drupal.org/node/2145751}) is reolsved.
     $node_tags = $storage->getEntityType()->getListCacheTags();
     // Since a taxonomy term could be changed from 'enabled' to 'disabled',
-    // we'll need to bush the cache when any taxonomy term is updated.
+    // we'll need to bust the cache when any taxonomy term is updated.
     $taxonomy_tags = $this->entityTypeManager->getStorage('taxonomy_term')->getEntityType()->getListCacheTags();
     $cache->setCacheTags(Cache::mergeTags($node_tags, $taxonomy_tags));
 
