@@ -63,6 +63,7 @@ class HelloWorld extends BlockBase implements ContainerFactoryPluginInterface {
 
     // Get the Hello World Articles that are in enabled sections.
     $query = $storage->getQuery();
+    // These conditions should be configurable!
     $query->condition('type', 'hello_world_article');
     $query->condition('field_sections.entity.field_enabled', 1);
     $query->sort('created', 'DESC');
