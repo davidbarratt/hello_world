@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - hello_world
+    - node
+  theme:
+    - bartik
+id: helloworldlist
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: hello_world_list
+settings:
+  id: hello_world_list
+  label: 'Hello World!'
+  provider: hello_world
+  label_display: visible
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hello_world_article: hello_world_article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
