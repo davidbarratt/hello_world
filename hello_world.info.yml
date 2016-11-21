@@ -4,4 +4,4 @@ description: 'Hello World Test'
 core: 8.x
 dependencies:
   - node
-  - taxonomy_term
+  - taxonomy
