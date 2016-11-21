@@ -1,8 +1,7 @@
-name: Hello World!
+name: 'Hello World!'
 type: module
-description: Hello World Test
+description: 'Hello World Test'
 core: 8.x
-package: Custom
 dependencies:
-  - 'node'
-  - 'taxonomy_term'
+  - node
+  - taxonomy_term
